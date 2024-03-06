@@ -1,47 +1,12 @@
 #root {
   max-width: calc(100vw - 4rem);
+  padding-top: 60px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.NavBar {
+.NavBar{
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -51,9 +16,12 @@
   top: 0px;
   left: 0px;
   margin: 0px;
+  height: 50px;
+  z-index: 9999;
+  background-color: black;
 }
 .NavBar li {
-  flex-grow: 1;
+  flex: 1;
 }
 .NavBar li :hover {
   background-color: white;
@@ -61,5 +29,27 @@
 #navLogo {
   flex-grow: 4;
   text-align: left;
-  padding: 10px;
+  padding-left: 10px;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.signInImage {
+  flex: 1;
+  background-color: white;
+}
+.pageContainer p {
+  flex:1;
+  text-align: left;
+}
+.signInBox {
+  display: flex;
+  flex-direction: row;
+}
+.signInBox button {
+  border: 3px solid orange;
+  border-radius: 8px;
+  width: 100px;
 }

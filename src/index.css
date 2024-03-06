@@ -24,17 +24,20 @@ a :hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: start center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: calc(max(4vmin, 25px));
   line-height: 1.1;
 }
+p{
+  font-size: calc(max(2vmin, 15px));
+}
 li {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 button {
