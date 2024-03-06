@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: calc(100vw - 4rem);
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -39,4 +39,27 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.NavBar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+}
+.NavBar li {
+  flex-grow: 1;
+}
+.NavBar li :hover {
+  background-color: white;
+}
+#navLogo {
+  flex-grow: 4;
+  text-align: left;
+  padding: 10px;
 }
