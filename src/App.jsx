@@ -1,13 +1,13 @@
 import "./App.css";
 import SignIn from "../pages/SignIn/SignIn";
-import { UserProvider } from "../Contexts/User";
+import { UserContext, UserProvider } from "../Contexts/User";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
 import NavBar from "../pages/Navigation/NavBar";
+import { useContext } from "react";
 
 function App() {
   return (
-    <UserProvider>
       <>
         <NavBar />
         <Routes>
@@ -15,7 +15,6 @@ function App() {
           <Route path='/profile' element={<SignIn/>}/>
         </Routes>
       </>
-    </UserProvider>
   );
 }
 
