@@ -39,10 +39,6 @@ const SignIn = () => {
         <p>Don't have an account?</p>
         <button className="signInButton">Guest</button>
       </div>
-      
-      
-      
-      
     </div>
   );
 };
