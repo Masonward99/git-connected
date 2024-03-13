@@ -58,7 +58,7 @@ export const getUserById = async (uid) => {
   return docArray[0];
 };
 
-export const addPortfolioRepos = async (
+export const addPortfolioRepo = async (
   username,
   html_url,
   name,

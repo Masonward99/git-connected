@@ -4,7 +4,7 @@ import { editProfile, getUserById } from "../../functions"
 import { useContext } from "react"
 import { UserContext } from "../../Contexts/User"
 
-function EditProfile({isOpen, setIsOpen, }) {
+function EditProfile({isOpen, setIsOpen }) {
     const {user, setUser} = useContext(UserContext)
     const [Name, setName] = useState(user.name)
     const [location, setLocation] = useState(user.location)
