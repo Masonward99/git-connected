@@ -14,18 +14,14 @@ function NavBar() {
             <li>Users</li>
             <li>Projects</li>
             <li>Messages</li>
-            {user ?
-                <li>
-                    <Link to='/'>
-                        <div>{user.username}</div>
-                    </Link>
-                </li> : 
-                <li>
+            <li>
                 <Link to='/profile'>
+                    {user ?
+                        <div>{user.username}</div> :
                         <div>Sign in</div>
-                    </Link>
-                </li>
-                }
+                    }
+                </Link>
+            </li> 
         </ul>
     )
 }

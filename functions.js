@@ -171,6 +171,7 @@ export const getProjectById = async (id) => {
 
 export const editProfile = async (username, bio, email, location, name) => {
   const docRef = doc(db, "users", `${username}`);
+  console.log('called')
   await updateDoc(docRef, {
     bio,
     email,
